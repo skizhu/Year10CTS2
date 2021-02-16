@@ -1,26 +1,3 @@
-/* HOW TO DRAW SPECIFIC DATA
-var userFname= database.ref('users/' + userId + '/Fname/Fname');
-    userFname.on('value', (snapshot) =>{
-    const Fdata = snapshot.val();
-        const title = document.getElementById('title');
-        title.innerHTML = Fdata;
-    })
-
-function writeUserData(Fname, Lname, Hobby, Food, Subject, userId) {
-    Fname = document.getElementById('Fname').value;
-    Lname = document.getElementById('Lname').value;
-    Hobby = document.getElementById('Hobby').value;
-    Food = document.getElementById('Food').value;
-    Subject = document.getElementById('Subject').value;
-    userId = document.getElementById('Fname').value + ' ' + document.getElementById('Lname').value;
-    firebase.database().ref('users/' + userId + '/Fname').set({ Fname: Fname });
-    firebase.database().ref('users/' + userId + '/Lname').set({ Lname: Lname });
-    firebase.database().ref('users/' + userId + '/Hobby').set({ Hobby: Hobby });
-    firebase.database().ref('users/' + userId + '/Food').set({ Food: Food });
-    firebase.database().ref('users/' + userId + '/Subject').set({ Subject: Subject });
-}
-*/
-
 //ADD USER
 var questions = ['inputEmail', 'inputPassword', 'inputFname', 'inputLname',
     'inputHobby', 'inputFood', 'inputSubject', 'inputYear'];

@@ -30,7 +30,18 @@
 
 <body>
 
-  <center><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></center>
+  <center>
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </center>
 
   <div class='divs' id='divs' style='display:none;'>
 
@@ -54,15 +65,51 @@
               <a class="nav-link" href="search.html">Search For Users</a>
             </li>
             <li>
-              <button class="btn btn-outline-info my-2 my-sm-0" id='logoutButton' onclick='signOut()' type="submit" style='display:none;'>Logout</button>
+              <button class="btn btn-outline-info my-2 my-sm-0" id='logoutButton' onclick='signOut()' type="submit"
+                style='display:none;'>Logout</button>
             </li>
         </div>
       </nav>
     </nav>
-
-    
+    <center>
+    <div class='aboutContent' id='aboutContent'>
+      <center>
+        <div id='aboutContentWhy' class='aboutContentTitle'>
+          <h3 id='aboutContentTitleWhy'>Why was this website made?</h3>
+          <ul id='aboutContentWhyUL'>
+            <li>To connect mentors and mentees</li>
+            <li>To substitue meeting in person (due to restrictions)</li>
+          </ul>
+        </div>
+        <div id='aboutContentWhat' class='aboutContentTitle'>
+          <h3 id='aboutContentTitleWhat'>What can you do with this website?</h3>
+          <ul id='aboutContentWhatUL'>
+            <li>Share informaiton about yourself</li>
+            <li>Learn about your mentor/mentee</li>
+            <li>Learn about memebers of your community</li>
+          </ul>
+        </div>
+        <div id='aboutContentHow' class='aboutContentTitle'>
+          <h3 id='aboutContentTitleHow'>How does the website work?</h3>
+          <ul id='aboutContentHowUL'>
+            <li>User details are stored on Google's Firebase</li>
+            <li>Accounts are authenticated with Google's Authentication</li>
+            <li>Back-end is coded in vanilla JavaScript and jQuery</li>
+          </ul>
+        </div>
+      </center>
     </div>
-</div>
+  </center>
+    <center>
+      <div class='followingContentWrapper'>
+        <h3 id='followingContentWrapperTitle'>You are currently following: </h3>
+        <div class='followingContent' id='followingContent'>
+
+        </div>
+      </div>
+    </center>
+  </div>
+  </div>
   <!-- jQuery, Bootstrap Bundle (includes Popper) and Material -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin></script>

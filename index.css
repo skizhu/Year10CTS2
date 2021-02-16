@@ -375,7 +375,7 @@ body{
     width:50%;
     z-index:999;
 }
-#profileSpan{
+#profileSpan, #profileSpanHobby, #profileSpanFood, #profileSpanSubject, #profileSpanYear, #profileSpanEmail{
   color:#6200ee;
 }
 .profileTitle{
@@ -397,9 +397,21 @@ body{
   font-size:1.5rem;
   margin-left:0.3rem;
 }
-#profileName, #profileHobby, #profileFood,#profileSubject, #profileYear{
+#profileName, #profileHobby, #profileFood, #profileSubject, #profileYear{
   transition:0.2s;
 }
 #followButton{
   margin-bottom:0.5rem;
+}
+.aboutContent{
+  margin-top:0.5rem;
+  border-bottom: 2px solid #6200ee;
+  box-shadow: 0 2px 0 #6200ee;
+}
+#aboutContentTitleWhat, #aboutContentTitleWhy, #aboutContentTitleHow, #followingContentWrapperTitle{
+  color:#6200ee;
+  font-weight:500;
+}
+#aboutContentWhatUL, #aboutContentWhyUL, #aboutContentHowUL > li{
+  font-size:2rem;
 }

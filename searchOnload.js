@@ -1,3 +1,9 @@
+$(document).keypress(function(e){
+    if (e.which == 13){
+        $("#searchBarButton").click();
+    }
+});
+
 function searchOnload(v, user) {
     v = document.getElementById('profileName').textContent;
     user = firebase.auth().currentUser;

@@ -1,5 +1,6 @@
 var v = ''
 function search() {
+    if(document.getElementById('searchBar').value != ''){
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             var rootRef = firebase.database().ref();
@@ -31,6 +32,7 @@ function search() {
             document.getElementById('searchWError').style.zIndex = '999';
         }
     });
+}
 }
 function onResultLoaded() {
 
